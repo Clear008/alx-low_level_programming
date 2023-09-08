@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-int Num[]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+int Num[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 int i;
 
-for( i = 0 ; i < 10 ; i++)
+for (i = 0 ; i < 10 ; i++)
 {
-printf("%d\n", Num[i]);
+printf("%d", Num[i]);
 }
 return (0);
 }
