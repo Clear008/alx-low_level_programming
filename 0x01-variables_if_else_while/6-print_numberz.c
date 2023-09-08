@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-int NumDigit= 0;
+int NumDigit = 0;
 
 while (NumDigit < 10)
 {
