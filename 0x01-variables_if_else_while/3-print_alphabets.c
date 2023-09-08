@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 /**
  * main - Entry point
@@ -6,16 +7,19 @@
  */
 int main(void)
 {
-
 char alphabetLowcase[] = "abcdefghijklmnopqrstuvwxyz";
 char alphabetUppercase[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 int i;
 
-for (i = 0 ; i < 52 ; i++)
-
+for(i = 0 ;i < 26 ;i ++)
+{
 putchar(alphabetLowcase[i]);
+}
+for(i = 0 ;i < 26 ;i ++)
+{
 putchar(alphabetUppercase[i]);
+}
 putchar('\n');
 
 return (0);
