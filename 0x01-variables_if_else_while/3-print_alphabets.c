@@ -12,7 +12,7 @@ char alphabetUppercase[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 int i;
 
-for (i = 0 ; i < 32 ; i++)
+for (i = 0 ; i < 52 ; i++)
 
 putchar(alphabetLowcase[i]);
 putchar(alphabetUppercase[i]);
