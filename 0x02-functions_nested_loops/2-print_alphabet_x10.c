@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 -  the alphabet a - z ten times 
+ * print_alphabet_x10 -  the alphabet a - z ten times
  *
 */
 
@@ -19,10 +19,9 @@ for (i = 'a' ; i <= 'z' ; i++)
 {
 _putchar(i);
 
-_putchar('\n');
 
 }
 j++;
-
+_putchar('\n');
 }
 }
