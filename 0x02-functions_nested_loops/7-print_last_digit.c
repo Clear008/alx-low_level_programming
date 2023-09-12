@@ -10,8 +10,8 @@ int a;
 if (n < 0 )
 
 a = -n % 10;
-
-if (n >= 0)
+else
+	
 a = n % 10;
 _putchar(a +'0');
 
