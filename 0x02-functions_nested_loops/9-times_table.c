@@ -22,7 +22,7 @@ _putchar(' ');
 }
 if (mul > 9)
 {
-_pucthar((mul/10) + '0');
+_putchar((mul/10) + '0');
 _putchar((mul%10) + '0');
 _putchar(',');
 _putchar(' ');
