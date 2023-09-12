@@ -12,7 +12,7 @@ for (i = 0 ; i <= 9 ; i++)
 {
 for (j = 0 ; j <= 9 ; j++)
 {
-mul=i*j;
+int mul=i*j;
 
 if (mul <= 9)
 {
