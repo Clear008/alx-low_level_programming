@@ -12,7 +12,7 @@ if (n < 0 )
 a = -n % 10;
 putchar(a +'0');
 
-else
+if (n > 0)
 a = n % 10;
 putchar(a +'0');
 
