@@ -1,16 +1,16 @@
 #include "main.h"
 /**
  *_abs  - the absolute value of an integer
- *@a: integer
+ *@n: integer
  *Return: absolute value
 */
 
-int _abs(int a)
+int _abs(int n)
 
-if (a >= 0)
+if (n >= 0)
 {
-return (a);
+return (n);
 }
 else
-return (-a);
+return (-n);
 
