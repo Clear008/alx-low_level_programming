@@ -1,5 +1,5 @@
 #include "main.h"
-#include<type.h>
+#include<ctype.h>
 /**
  * print _islower
  *
