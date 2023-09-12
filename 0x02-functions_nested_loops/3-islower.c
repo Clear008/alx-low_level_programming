@@ -1,5 +1,4 @@
 #include "main.h"
-#include<ctype.h>
 /**
  * print _islower
  *
@@ -7,17 +6,22 @@
 */
 
 int _islower(int c)
-{
-int i;
-if (i islower)
-{
-putchar(49);
-}
-else
-{
-putchar(48);
 
+char lowercase[] = "abcdefghijklmnopqrstuvwxyz"
+
+int i=0;
+
+while ( i < 26)
+{
+
+if (lowercase[i] == c) 
+{       	
+return (1);
 }
+i++;
+}
+ 
+return (0);
 _putchar('\n');
 }
 
