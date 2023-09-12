@@ -1,7 +1,9 @@
 #include "main.h"
+
 /**
- * print alphanet
- */
+ *
+ * print alphanet -  the alphabet a - z
+*/
 
 void print_alphabet(void)
 {
