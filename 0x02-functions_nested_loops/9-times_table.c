@@ -12,10 +12,21 @@ for (i = 0 ; i <= 9 ; i++)
 {
 for (j = 0 ; j <= 9 ; j++)
 {
-_putchar ((i * j) + '0');
+mul=i*j;
+
+if (mul <= 9)
+{
+_putchar(mul + '0');
 _putchar(',');
 _putchar(' ');
-
+}
+if (mul > 9)
+{
+_pucthar((mul/10) + '0');
+_putchar((mul%10) + '0');
+_putchar(',');
+_putchar(' ');
+}
 }
 _putchar('\n');
 }
