@@ -10,11 +10,10 @@ int a;
 if (n < 0 )
 
 a = -n % 10;
-putchar(a +'0');
 
 if (n > 0)
 a = n % 10;
-putchar(a +'0');
+_putchar(a +'0');
 
 return (a);
 
