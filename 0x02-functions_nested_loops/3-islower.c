@@ -1,27 +1,16 @@
 #include "main.h"
 /**
- * print _islower
+ *  checks for _islower c
  *
- * return value of '_islower'
+ * return :  value of '_islower'
 */
 
 int _islower(int c)
-
-char lowercase[] = "abcdefghijklmnopqrstuvwxyz"
-
-int i=0;
-
-while ( i < 26)
 {
+if (c >= 'a' && c <= 'z')
 
-if (lowercase[i] == c) 
-{       	
 return (1);
-}
-i++;
-}
- 
+else
 return (0);
-_putchar('\n');
 }
 
