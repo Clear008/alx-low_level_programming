@@ -19,8 +19,13 @@ int mul = i * j;
 _putchar(mul + '0');
 _putchar(',');
 _putchar(' ');
+
+if (j < n)
+{
+_putchar(',');
+_putchar(' ');
 }
 }
 _putchar('\n');
 }
-
+}
