@@ -17,24 +17,24 @@ for (j = 0; j <= n; j++)
 {
 int mul = i * j;
 
-if (j > 0)
+if (j >= 0)
 {
 _putchar(',');
 _putchar(' ');
 }
 
-if (mul < 10 && j > 0)
+if (mul < 10 && j >= 0)
 {
 _putchar(' ');
 _putchar(' ');
 _putchar(' ');
 }
-else if (mul < 100 && j > 0)
+else if (mul < 100 && j >= 0)
 {
 _putchar(' ');
 _putchar(' ');
 }
-else if (j > 0)
+else if (j >= 0)
 {
 _putchar(' ');
 }
