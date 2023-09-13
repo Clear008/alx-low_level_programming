@@ -8,14 +8,13 @@
 void print_to_98(int n)
 {
 int i;
-for(i = 0; i <= 98 ; i++)
+int j;
+for(i = n; i <= 98 ; n++)
 {
 printf("%d,\t",i);
 }
 
-int j;
-
-for(j = 0 ; j > 98 ; j --)
+for(j = n ; j > 98 ; j --)
 {
 printf("%d,\t",j);
 }
