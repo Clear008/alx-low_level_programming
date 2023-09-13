@@ -14,8 +14,14 @@ for (i = 3; i <= n; ++i)
 {
 
 n3 = n1 + n2;
-
-printf(", %ld ", n3);
+if(i < n)
+{
+printf(", %ld", n3);
+}
+else
+{
+printf(" %ld", n3);
+}
 n1 = n2;
 n2 = n3;
 
