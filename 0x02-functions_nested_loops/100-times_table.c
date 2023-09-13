@@ -24,7 +24,7 @@ _putchar(' ');
 _putchar(' ');
 }
 
-if (ml <= 9)
+if (mul <= 9)
 {
 _putchar(mul + '0');
 }
