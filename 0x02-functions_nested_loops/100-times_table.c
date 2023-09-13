@@ -32,11 +32,12 @@ if (mul >= 100)
 _putchar((mul / 100) + '0');
 _putchar((mul / 10) % 10 + '0');
 
-
+{
 if else (mul <= 99 && mul >= 10)
 
 _putchar((mul / 10) + '0');
 _putchar((mul % 10) + '0');
+}
 }
 _putchar('\n');
 }
