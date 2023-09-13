@@ -15,7 +15,7 @@ for (i = 3; i <= n; ++i)
 
 n3 = n1 + n2;
 
-printf(", %ld", n3);
+printf(", %ld ", n3);
 n1 = n2;
 n2 = n3;
 
