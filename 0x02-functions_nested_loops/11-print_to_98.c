@@ -12,6 +12,6 @@ while (n<98)
 printf("%d,\t",n);
 n++;
 }
-printf("98");
+printf("98 ");
 }
 
