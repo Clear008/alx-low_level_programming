@@ -24,7 +24,7 @@ _putchar(' ');
 _putchar(' ');
 }
 
-if (j > 0)
+if (j < 9)
 {
 _putchar(mul + '0');
 }
