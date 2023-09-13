@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-unsigned long int n1 = 0, n2 = 1, n3;
+unsigned long n1 = 0, n2 = 1, n3;
 float sum;
 
 while (1)
