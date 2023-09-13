@@ -26,8 +26,6 @@ _putchar(' ');
 
 if (ml <= 9)
 {
-if (j > 0)
-{
 _putchar(' ');
 }
 _putchar(mul + '0');
