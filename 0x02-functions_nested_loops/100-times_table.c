@@ -40,17 +40,17 @@ putchar('0');
 else
 {
 int temp = mul;
-int digit[3] = {0};
+int digits[3] = {0};
 int count = 0;
 
 while (temp > 0)
 {
-digit[count++] = tem % 10;
+digits[count++] = temp % 10;
 temp /= 10;
 }
-for (int k = count - 1; k >=0;k --)
+for (int k = count - 1; k >= 0 ;k --)
 {
-putchar(digit[k] + '0');
+_putchar(digits[k] + '0');
 }
 }
 }
