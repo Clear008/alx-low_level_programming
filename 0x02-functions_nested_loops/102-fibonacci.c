@@ -9,13 +9,13 @@ int main(void)
 long int n1 = 1, n2 = 2, n3;
 
 int i, n = 50;
-printf("%ld, %ld, ", n1, n2);
+printf("%ld, %ld", n1, n2);
 for (i = 3; i <= n; ++i)
 {
 
 n3 = n1 + n2;
 
-printf("%ld, ", n3);
+printf(", %ld", n3);
 n1 = n2;
 n2 = n3;
 
