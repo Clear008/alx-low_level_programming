@@ -2,7 +2,7 @@
 #include<stdio.h>
 /**
  * print_to_98 - prints all natural numbers from n to 98
- *@n is anumber 
+ *@n: is anumber
  *Return: value
 */
 void print_to_98(int n)
