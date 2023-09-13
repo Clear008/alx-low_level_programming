@@ -7,11 +7,11 @@
 */
 void print_to_98(int n)
 {
-while (n<98)
+if (n==98)
 {
+printf("98\t");
+}
+else
 printf("%d,\t",n);
-n++;
+n++
 }
-printf("98 ");
-}
-
