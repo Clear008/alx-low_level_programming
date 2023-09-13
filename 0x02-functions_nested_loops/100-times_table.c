@@ -23,12 +23,18 @@ _putchar(',');
 _putchar(' ');
 }
 
-if (mul < 10)
+if (mul < 10 && j > 0)
+{
+_putchar(' ');
+_putchar(' ');
+_putchar(' ');
+}
+else if (mul < 100 && j > 0)
 {
 _putchar(' ');
 _putchar(' ');
 }
-else if (mul < 100)
+else if (j > 0)
 {
 _putchar(' ');
 }
