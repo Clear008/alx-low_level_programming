@@ -39,7 +39,7 @@ putchar('0');
 }
 else
 {
-int temp = mul
+int temp = mul;
 int digit[3] = {0};
 int count = 0;
 
