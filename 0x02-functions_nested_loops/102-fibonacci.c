@@ -21,6 +21,7 @@ printf(", %ld", n3);
 else
 {
 printf(", %ld ", n3);
+printf("\n");
 }
 n1 = n2;
 n2 = n3;
