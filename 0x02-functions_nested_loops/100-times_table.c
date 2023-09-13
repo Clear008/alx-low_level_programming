@@ -16,7 +16,6 @@ for (i = 0; i <= n; i++)
 for (j = 0; j <= n; j++)
 {
 int mul = i * j;
-_putchar(mul + '0');
 if (j < n)
 {
 _putchar(',');
@@ -24,6 +23,12 @@ _putchar(' ');
 _putchar(' ');
 _putchar(' ');
 }
+
+if (j > 0)
+{
+_putchar(mul + '0');
+}
+
 else
 {
 _putchar((mul / 10) + '0');
