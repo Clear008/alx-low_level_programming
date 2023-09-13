@@ -16,5 +16,5 @@ n--;
 
 else
 printf("%d,\t",n);
-n++
+n++;
 }
