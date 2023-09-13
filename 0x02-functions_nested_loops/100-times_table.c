@@ -17,7 +17,7 @@ for (j = 0; j <= n; j++)
 {
 int mul = i * j;
 _putchar(mul + '0');
-
+_putchar(' ');
 if (j < n)
 {
 _putchar(',');
