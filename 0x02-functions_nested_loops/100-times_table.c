@@ -24,6 +24,11 @@ _putchar(' ');
 _putchar(' ');
 _putchar(' ');
 }
+else
+{
+_putchar((mul / 10) + '0');
+_putchar((mul % 10) + '0');
+}
 }
 _putchar('\n');
 }
