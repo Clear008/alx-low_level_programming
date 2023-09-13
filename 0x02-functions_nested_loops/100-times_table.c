@@ -7,7 +7,7 @@ void print_times_table(int n)
 {
 int i;
 int j;
-
+int mul;
 if (n < 0 || n > 15)
 {
 return;
@@ -21,7 +21,7 @@ for (j = 1; j <= n; j++)
 _putchar(',');
 _putchar(' ');
 
-int mul = i * j;
+mul = i * j;
 
 if (mul <= 9)
 
