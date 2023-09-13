@@ -6,19 +6,17 @@
  */
 int main(void)
 {
-int main(void)
-{
-int i,a,b;
-long unsigned int sum=0;
+int i, a, b;
+int sum = 0;
 a = 3;
 b = 5;
-for(i = 0 ; i <= 1024 ; i++)
+for (i = 0 ; i <= 1024 ; i++)
 
-if((i % a == 0 || i % b == 0))
+if ((i % a == 0 || i % b == 0))
 {
-    sum =sum + i;
+sum = sum + i;
 }
 printf("%d\n", sum);
 
-return 0;
+return (0);
 }
