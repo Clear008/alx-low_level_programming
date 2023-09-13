@@ -7,14 +7,18 @@
 */
 void print_to_98(int n)
 {
-if (n==98)
-printf("98\t");
-
-else if (n > 98 )
-printf("%d,\t",n);
-n--;
-
-else
-printf("%d,\t",n);
-n++;
+int i;
+for(i = 0; i <= 98 ; i++)
+{
+printf("%d,\t",i);
 }
+
+int j;
+
+for(j = 0 ; j > 98 ; j --)
+{
+printf("%d,\t",j);
+}
+
+}
+
