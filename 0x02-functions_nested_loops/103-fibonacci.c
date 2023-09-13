@@ -13,8 +13,9 @@ while (1)
 {
 n3 = n1 + n2;
 
-if ((n3 > 400000))
-break;
+if (n3 > 400000)
+brea;
+
 if ((sum % 2) == 0)
 sum += n3;
 n1 = n2;
