@@ -21,7 +21,10 @@ int i, j;
 
             if (mul <= 9)
             {
-                _putchar(' ');
+if (j > 0)
+{
+_putchar(' ');
+}
                 _putchar(mul + '0');
             }
             else
