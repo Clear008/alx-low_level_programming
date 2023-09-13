@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdint.h>
 /**
  * main - Entry point
  *
@@ -6,7 +7,7 @@
  */
 int main(void)
 {
-long int n1 = 1, n2 = 2, n3;
+int64_t n1 = 1, n2 = 2, n3;
 
 int i, n = 98;
 printf("%ld, %ld", n1, n2);
