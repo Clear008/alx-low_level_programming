@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-int i,n,a,b;
+int i,a,b;
 a = 3;
 b = 5;
 for(i = 1 ; i <= 1024 ; i++)
