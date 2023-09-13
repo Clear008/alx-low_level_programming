@@ -42,13 +42,14 @@ else
 int temp = mul;
 int digits[3] = {0};
 int count = 0;
+int k;
 
 while (temp > 0)
 {
 digits[count++] = temp % 10;
 temp /= 10;
 }
-for (int k = count - 1; k >= 0 ;k --)
+for (k = count - 1; k >= 0 ;k --)
 {
 _putchar(digits[k] + '0');
 }
