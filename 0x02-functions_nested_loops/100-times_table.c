@@ -24,8 +24,12 @@ _putchar(' ');
 _putchar(' ');
 }
 
-if (j < 9)
+if (ml <= 9)
 {
+if (j > 0)
+{
+_putchar(' ');
+}
 _putchar(mul + '0');
 }
 
