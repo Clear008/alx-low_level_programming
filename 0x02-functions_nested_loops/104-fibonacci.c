@@ -2,6 +2,7 @@
 #include<inttypes.h>
 /**
  * numLength - create a new fonction
+ *@num: a variable 
  * Return: lenght
 */
 
