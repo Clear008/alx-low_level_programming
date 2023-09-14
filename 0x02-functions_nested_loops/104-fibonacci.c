@@ -13,7 +13,7 @@ for (count = 1; count <= 98; count++)
 {
 if (f1 > 0)
 printf("%lu", f1);
-initialos = numLength(max) - 1 - numLength(n1);
+init = numLength(max) - 1 - numLength(n1);
 while (f1 > 0 && init > 0)
 {
 printf("%d", 0);
