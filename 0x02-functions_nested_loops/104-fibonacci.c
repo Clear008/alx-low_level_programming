@@ -7,28 +7,29 @@
  */
 int main(void)
 {
-int64_t n1 = 1, n2 = 2, n3;
-
-int i, n = 98;
-printf("%lld, %lld", (long long int)n1, (long long int)n2);
-for (i = 3; i <= n; ++i)
+int count, init;
+unsigned long n1 = 1, n2 = 2, n3, max= 100000000, f1= 0, f2 = 0, f3 = 0;
+for (count = 1; count <= 98; count++)
 {
-
-n3 = n1 + n2;
-if (i < n)
+if (f1 > 0)
+printf("%lu", f1);
+initialos = numLength(max) - 1 - numLength(n1);
+while (f1 > 0 && init > 0)
 {
-printf(", %lld", (long long int)n3);
+printf("%d", 0);
+init--;
 }
+printf("%lu", n1);
+n3 = (n1+n2) % max;
+f3 = f1 + f2 + (n1+ n2) / max;
+n1 = n2;
+f1 = f2;
+n2 = n3;
+f2 = f3;
+if (count != 98)
+printf(", ");
 else
-{
-printf(", %lld", (long long int)n3);
 printf("\n");
 }
-n1 = n2;
-n2 = n3;
-
-}
-
 return (0);
 }
-
