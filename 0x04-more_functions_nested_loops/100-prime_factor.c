@@ -7,9 +7,9 @@
 */
 int main(void)
 {
-long long num = 612852475143LL;
-long long largestPF = 0;
-long long i;
+unsigned long int  num = 612852475143;
+unsigned long int largestPF = 0;
+unsigned long int i;
 for (i = 2; i <= sqrt(num); i++)
 {
 while (num % i  == 0)
@@ -25,7 +25,7 @@ if (num >= 2)
 largestPF = num;
 }
 
-printf("Largest Prime Factor: %lld\n", largestPF);
+printf("Largest Prime Factor: %lu\n", largestPF);
 
 return (0);
 }
