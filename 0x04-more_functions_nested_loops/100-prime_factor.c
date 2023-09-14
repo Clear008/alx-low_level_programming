@@ -25,7 +25,7 @@ if (num >= 2)
 largestPF = num;
 }
 
-printf("Largest Prime Factor: %lu\n", largestPF);
+printf("%lu\n", largestPF);
 
 return (0);
 }
