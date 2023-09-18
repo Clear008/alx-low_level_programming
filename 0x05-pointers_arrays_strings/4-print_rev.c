@@ -4,12 +4,13 @@
  * print_rev - prints a string, in reverse, followed by a new line
  *@s: string
 */
-void print_rev(char *s)
+void print_rev(char *str)
 {
-int length = strlen(s);
+int length = strlen(str);
 int i;
 for (i = length - 1 ; i >= 0 ; i--);
-
-_putchar(s[i]);
+{
+_putchar(str[i]);
+}
 _putchar('\n');
 }
