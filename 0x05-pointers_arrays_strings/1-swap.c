@@ -6,7 +6,7 @@
 */
 void swap_int(int *a, int *b)
 {
-int tempo = *a
+int tempo = *a;
 *a = *b;
 *b = tempo;
 }
