@@ -41,4 +41,4 @@ printf("%c", n);
 printf("\n");
 k += 10;
 }
-i}
+}
