@@ -1,5 +1,35 @@
 #include "main.h"
 /**
+ * remove_extra_spaces - fonction to remove extra spaces
+ * @str: string
+ * Return: str
+ */
+char *remove_extra_spaces(char *str)
+{
+int i, j;
+int space = 0;
+for (i = j = 0; str[i] != '\0'; i++)
+{
+if (str[i] == ' ' || str[i] == '\t')
+{
+if (!space)
+{
+str[j++] = ' ';
+space = 1;
+}
+}
+else
+{
+str[j++] = str[i];
+space = 0;
+}
+}
+
+str[j] = '\0';
+return (str);
+}
+
+/**
  * cap_string - function that capitalizes all words of a string.
  * @str: a string
  *
@@ -39,38 +69,7 @@ n = 0;
 }
 i++;
 }
-
+remove_extra_spaces(str);
 return (str);
 }
-
-/**
- * remove_extra_spaces - fonction to remove extra spaces
- * @str: string
- * Return: str
- */
-char *remove_extra_spaces(char *str)
-{
-int i, j;
-int space = 0;
-for (i = j = 0; str[i] != '\0'; i++)
-{
-if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n')
-{
-if (!space)
-{
-str[j++] = ' ';
-space = 1;
-}
-}
-else
-{
-str[j++] = str[i];
-space = 0;
-}
-}
-
-str[j] = '\0';
-return (str);
-}
-
 
