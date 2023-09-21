@@ -3,7 +3,7 @@
  * rot13 - a function that encodes a string using rot13.
  * @c: a string
  * Return: t
- */
+*/
 char *rot13(char *c)
 {
 int i;
@@ -20,9 +20,9 @@ if (*c == s1[i])
 *c = s2[i];
 break;
 }
-c++;
 }
+c++;
+
 }
 return (t);
-
 }
