@@ -30,7 +30,7 @@ for (k = sup - 1 ; k >= 0 ; k--)
 if (i >= 0)
 dig1 = n1[i] - 48;
 else
-gid1 = 0;
+dig1 = 0;
 if (j >= 0)
 dig2 = n2[j] - 48;
 else
