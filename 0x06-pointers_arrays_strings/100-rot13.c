@@ -13,10 +13,9 @@ char s2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 char *t = c;
 while (*c)
 {
-	for (i = 0; i <= 52 ; i++)
-
+for (i = 0; i <= 52 ; i++)
 {
-	if (*c == s1[i])
+if (*c == s1[i])
 {
 *c = s2[i];
 break;
