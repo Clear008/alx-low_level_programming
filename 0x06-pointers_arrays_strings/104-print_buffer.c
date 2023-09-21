@@ -17,13 +17,13 @@ return;
 while (k < size)
 {
 j = size - k < 10 ? size - k : 10;
-printf("%08x:", k);
+printf("%08x: ", k);
 for (i = 0; i < 10; i++)
 {
 if (i < j)
 printf("%02x", *(b + k + i));
 else
-printf(" ");
+printf("  ");
 if (i % 2)
 {
 printf(" ");
@@ -41,4 +41,4 @@ printf("%c", n);
 printf("\n");
 k += 10;
 }
-}
+i}
