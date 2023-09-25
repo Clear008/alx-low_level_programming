@@ -17,5 +17,5 @@ if (s[i] == accept[j])
 return (&s[i]);
 }
 }
-return ('\n');
+return ('\0');
 }
