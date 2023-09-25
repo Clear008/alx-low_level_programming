@@ -13,10 +13,10 @@ while (*p != '\0')
 {
 if (*p == c)
 {
-return (p);
+return (s);
 }
 p++;
 }
 
-return (NULL);
+return ('\0');
 }
