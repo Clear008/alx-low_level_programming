@@ -13,8 +13,9 @@ while (*p != '\0')
 {
 if (*p == c)
 {
-return (s);
+return ((char *)p);
 }
+
 p++;
 }
 
