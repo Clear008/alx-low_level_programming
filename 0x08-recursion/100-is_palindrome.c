@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * alphabet_comper - it compare characters from left and right
  * @left: left side of a string
