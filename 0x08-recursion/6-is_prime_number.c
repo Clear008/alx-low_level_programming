@@ -10,6 +10,7 @@ int find_prime(int n, int m);
 int is_prime_number(int n)
 {
 return (find_prime(n, 2));
+}
 
 /**
  * find_prime - find a prime number
