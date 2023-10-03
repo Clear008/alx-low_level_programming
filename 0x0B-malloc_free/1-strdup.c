@@ -40,5 +40,4 @@ for (i = 0; i <= len; i++)
 	cp_str[i] = str[i];
 
 return (cp_str);
-free(cp_str);
 }
