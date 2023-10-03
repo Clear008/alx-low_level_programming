@@ -31,7 +31,7 @@ unsigned int i;
 char *cp_str;
 
 if (str == NULL)
-returen (NULL);
+return (NULL);
 
 len = _strlen(str);
 
