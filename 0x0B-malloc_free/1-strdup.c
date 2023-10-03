@@ -27,7 +27,7 @@ return (length);
 char *_strdup(char *str)
 {
 unsigned int len;
-int i;
+unsigned int i;
 char *cp_str;
 
 len = _strlen(str);
@@ -36,7 +36,7 @@ len = _strlen(str);
 if (str == NULL || cp_str == NULL)
 	return (NULL);
 
-for (i = 0; i <= len; i++)
+for (i = 0; i < len; i++)
 	cp_str[i] = str[i];
 
 return (cp_str);
