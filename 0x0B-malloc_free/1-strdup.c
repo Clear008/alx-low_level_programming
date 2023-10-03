@@ -30,10 +30,13 @@ unsigned int len;
 unsigned int i;
 char *cp_str;
 
+if (str == NULL)
+returen (NULL);
+
 len = _strlen(str);
 
 	cp_str = malloc(sizeof(char) * (len + 1));
-if (str == NULL || cp_str == NULL)
+if (cp_str == NULL)
 	return (NULL);
 
 for (i = 0; i < len; i++)
