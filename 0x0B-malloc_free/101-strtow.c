@@ -8,17 +8,19 @@
 
 char **strtow(char *str)
 {
-char *str;
+char *sting;
 int separator_count = 0;
 int i;
-while (str[i] != '\0') {
-        if (str[i] == ' ') {
-            separator_count++;
-        }
-        i++;
-    }
 
-    str = malloc(sizeof(char) * (separator_count + 2));
-    if (str == NULL || str[0] == '\0')
+   if (str == NULL || str[0] == '\0')
     return(NULL);
+
+while (str[i] != '\0') {
+        if (str[i] == ' ')
+{
+            separator_count++;
 }
+        i++;
+}
+
+    string = malloc(sizeof(char) * (separator_count + 1));
