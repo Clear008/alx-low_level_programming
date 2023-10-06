@@ -8,17 +8,17 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int *p;
-unsigned int i = 0;
+char  *p;
+unsigned int i;
 
 if (nmemb == 0 || size == 0)
 return (NULL);
 
-p = (unsigned int *)malloc(nmemb * sizeof(unsigned int));
+p = malloc(nmemb * sizeof(unsigned int));
 if (p == 0)
 return (NULL);
 
-for (; i < nmemb * size; i++)
+for (i = 0; i < nmemb * size; i++)
 {
 p[i] = 0;
 }
