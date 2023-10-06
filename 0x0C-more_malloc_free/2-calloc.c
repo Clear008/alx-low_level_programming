@@ -14,7 +14,7 @@ unsigned int i;
 if (nmemb == 0 || size == 0)
 return (NULL);
 
-p = malloc(nmemb * sizeof(unsigned int));
+p = malloc(nmemb * sizeof(int));
 if (p == 0)
 return (NULL);
 
