@@ -1,4 +1,4 @@
-#include "main.h"
+
 #include <stdlib.h>
 #include <string.h>
 /**
@@ -7,14 +7,19 @@
  * @s2: string 2
  * @n:number of bytes for string 2
  * Return: pointer shall point to a newly allocated space in memory
-*/
+ */
 
 char *string_nconcat(const char *s1, const char *s2, unsigned int n)
 {
 char *str;
 int i, j;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 
 str = (char *)malloc(strlen(s1) + n + 1);
+
 if (str == NULL)
 return (NULL);
 
