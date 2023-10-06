@@ -23,3 +23,4 @@ for (; i < nmemb * size; i++)
 p[i] = 0;
 }
 return (p);
+}
