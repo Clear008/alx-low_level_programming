@@ -29,10 +29,9 @@ else if (new_size == old_size)
 else if (ptr == NULL)
 {
 	p = malloc(new_size);
-if (p == NULL)
-{
-	return (NULL);
-}
+
+	return (p);
+
 }
 else if (new_size == 0 && ptr != NULL)
 {
