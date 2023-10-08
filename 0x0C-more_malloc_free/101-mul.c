@@ -11,11 +11,10 @@
 int _isdigit(char *c)
 {
 int i;
-for (i = 0; s[i] != '\0'; i++)
+for (i = 0; c[i] != '\0'; i++)
 {
-if (!isdigit(s[i]))
+if (c[i] < 48 || c[i] > 57)
 {
-
 return (0);
 }
 }
@@ -48,18 +47,20 @@ return (length);
 
 int main(int argc, char *argv[])
 {
-int i;
-	if (arg != 3)
+int i, mul;
+char *num1, *num2;
+int i_num1, i_num2;
+	if (argc != 3)
 {
 	printf("Error\n");
 	return (98);
 }
-char *num1 = argv[1];
-char *num2 = argv[2];
+num1 = argv[1];
+num2 = argv[2];
 
 for (i = 0; i < _strlen(num1); i++)
 {
-if (!_isdigit(num1[i]))
+if (!_isdigit(num1))
 {
 	printf("Error\n");
 	return (98);
@@ -67,17 +68,17 @@ if (!_isdigit(num1[i]))
 }
 for (i = 0; i < _strlen(num2); i++)
 {
-if (!_isdigit(num2[i]))
+if (!_isdigit(num2))
 {
 printf("Error\n");
 return (98);
 }
 }
 
-int i_num1 = atoi(num1);
-int i_mun2 = atoi(num2);
+i_num1 = atoi(num1);
+i_num2 = atoi(num2);
 
-int result = i_num1 * i_num2;
-printf("%d\n", result);
+mul = i_num1 *i_num2;
+printf("%d\n", mul);
 return (0);
 }
