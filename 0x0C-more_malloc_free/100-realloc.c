@@ -15,6 +15,7 @@ if (new_size > old_size)
 {
 p = malloc(new_size);
 if (p == NULL)
+{
 	return (NULL);
 }
 memcpy(p, ptr, old_size);
@@ -30,6 +31,7 @@ else if (ptr == NULL)
 if (p == NULL)
 {
 	return (NULL);
+}
 }
 else if (new_size == 0 && ptr != NULL)
 {
