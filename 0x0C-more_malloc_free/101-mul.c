@@ -57,7 +57,7 @@ l1 = _strlen(num1);
 l2 = _strlen(num2);
 	length = l1 + l2 + 1;
 	p = malloc(sizeof(int) * length);
-	if (p == NULL)
+	if (!p)
 		return (1);
 	for (i = 0; i <= l1 + l2; i++)
 		p[i] = 0;
