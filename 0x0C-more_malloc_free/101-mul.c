@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -61,8 +62,8 @@ if (!_isdigit(num1) || !_isdigit(num2))
 {
 return (98);
 }
-l1 = _strlen(s1);
-l2 = _strlen(s2);
+l1 = _strlen(num1);
+l2 = _strlen(num2);
 	length = l1 + l2 + 1;
 	p = malloc(sizeof(int) * length);
 	if (p == NULL)
@@ -94,6 +95,6 @@ _putchar(p[i] + '0');
 if (!n)
 _putchar('0');
 _putchar('\n');
-free(result);
+free(p);
 return (0);
 }
