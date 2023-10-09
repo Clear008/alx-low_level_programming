@@ -50,18 +50,9 @@ int main(int argc, char *argv[])
 {
 int i, l1, l2, length, dig1, dig2, carry, *p, n;
 char *num1, *num2;
-
-if (argc != 3)
-{
+num1 = argv[1], num2 = argv[2];
+if (argc != 3 || !_isdigit(num1) || !_isdigit(num2))
 return (98);
-}
-num1 = argv[1];
-num2 = argv[2];
-
-if (!_isdigit(num1) || !_isdigit(num2))
-{
-return (98);
-}
 l1 = _strlen(num1);
 l2 = _strlen(num2);
 	length = l1 + l2 + 1;
@@ -71,7 +62,6 @@ l2 = _strlen(num2);
 	for (i = 0; i <= l1 + l2; i++)
 		p[i] = 0;
 for (l1 = l1 - 1; l1 >= 0; l1--)
-
 {
 dig1 = num1[l1] - '0';
 carry = 0;
