@@ -47,45 +47,45 @@ return (length);
  */
 int main(int argc, char *argv[])
 {
-char *s1, *s2;
-int len1, len2, len, i, carry, digit1, digit2, *result, a = 0;
+char *num1, *num2;
+int l1, l2, len, i, carry, digit1, digit2, *p, a = 0;
 
-s1 = argv[1], s2 = argv[2];
-if (argc != 3 || !_isdigit(s1) || !_isdigit(s2))
+num11 = argv[1], num2 = argv[2];
+if (argc != 3 || !_isdigit(num1) || !_isdigit(num2))
 return (98);
-len1 = _strlen(s1);
-len2 = _strlen(s2);
-len = len1 + len2 + 1;
-result = malloc(sizeof(int) * len);
-if (!result)
+l1 = _strlen(num1);
+l2 = _strlen(num2);
+len = l1 + l2 + 1;
+p = malloc(sizeof(int) * len);
+if (!p)
 return (1);
-for (i = 0; i <= len1 + len2; i++)
-result[i] = 0;
-for (len1 = len1 - 1; len1 >= 0; len1--)
+for (i = 0; i <= l1 + l2; i++)
+p[i] = 0;
+for (l1 = l1 - 1; l1 >= 0; l1--)
 {
-digit1 = s1[len1] - '0';
+digit1 = num1[l1] - '0';
 carry = 0;
-for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
+for (l2 = _strlen(num2) - 1; l2 >= 0; l2--)
 {
-digit2 = s2[len2] - '0';
-carry += result[len1 + len2 + 1] + (digit1 *digit2);
-result[len1 + len2 + 1] = carry % 10;
+digit2 = num2[l2] - '0';
+carry += p[l1 + l2 + 1] + (digit1 *digit2);
+p[l1 + l2 + 1] = carry % 10;
 carry /= 10;
 }
 if (carry > 0)
-result[len1 + len2 + 1] += carry;
+p[l1 + l2 + 1] += carry;
 }
 for (i = 0; i < len - 1; i++)
 {
-if (result[i])
+if (p[i])
 a = 1;
 if (a)
-_putchar(result[i] + '0');
+_putchar(p[i] + '0');
 }
 if (!a)
 _putchar('0');
 _putchar('\n');
-free(result);
+free(p);
 return (0);
 }
 
