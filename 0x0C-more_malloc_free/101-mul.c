@@ -70,7 +70,7 @@ l2 = _strlen(s2);
 	for (i = 0; i <= l1 + l2; i++)
 		p[i] = 0;
 for (l1 = l1 - 1; l1 >= 0; l1--)
-	{
+
 {
 dig1 = num1[l1] - '0';
 carry = 0;
