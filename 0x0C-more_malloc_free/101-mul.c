@@ -48,7 +48,7 @@ return (length);
 
 int main(int argc, char *argv[])
 {
-int i, l1, l2, length, dig1, dig2, carry, *p, n;
+int i, l1, l2, length, dig1, dig2, carry, *p, n = 0;
 char *num1, *num2;
 num1 = argv[1], num2 = argv[2];
 if (argc != 3 || !_isdigit(num1) || !_isdigit(num2))
