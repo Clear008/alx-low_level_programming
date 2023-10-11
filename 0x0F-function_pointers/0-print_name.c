@@ -6,7 +6,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-if (f == 0 || name == 0)
-	return;
+if (f && name)
+
 f(name);
 }
