@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include "lists.h"
-#include <stdlib.h>
 /**
  * print_list - prints all the elements of a list_t
  * @h: pointer
@@ -8,7 +6,8 @@
  */
 size_t print_list(const list_t *h)
 {
-size_t  wcount = 0;
+size_t  wcount;
+wcount = 0;
 
 while (h != NULL)
 {
