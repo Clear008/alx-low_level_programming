@@ -16,7 +16,7 @@ if (new_node == NULL)
 	return (NULL);
 for (inx = 0; str[inx] != '\0'; inx++)
 acount++;
-new_node->len = i;
+new_node->len = inx;
 new_node->str = strdup(str);
 new_node->next = *head;
 *head = new_node;
