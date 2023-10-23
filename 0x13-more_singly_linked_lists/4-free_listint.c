@@ -5,9 +5,11 @@
  */
 void free_listint(listint_t *head)
 {
-if (head->next != NULL)
+	listint_t *t;
+while (head != NULL)
 {
-free_listint(head->next);
+	t = head;
+	head = head->next;
+	free(t);
 }
-free(head);
 }
