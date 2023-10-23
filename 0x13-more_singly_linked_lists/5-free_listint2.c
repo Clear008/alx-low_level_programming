@@ -5,14 +5,14 @@
  */
 void free_listint2(listint_t **head)
 {
-listint_t *crt = *head;
-listint_t *next;
-
-while (crt != NULL)
+listint_t *t;
+if (head == NULL)
+	return;
+while (*head != NULL)
 {
-next = crt->next;
-free(crt);
-crt = next;
+t = *head;
+*head = (*head)->next;
+
+free(t);
 }
-*head = NULL;
 }
