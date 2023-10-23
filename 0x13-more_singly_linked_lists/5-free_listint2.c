@@ -5,9 +5,9 @@
  */
 void free_listint2(listint_t **head)
 {
-listint_t *crt;
+listint_t *crt = *head;
 listint_t *next;
-*crt = *head;
+
 while (crt != NULL)
 {
 next = crt->next;
