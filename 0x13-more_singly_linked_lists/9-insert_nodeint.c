@@ -19,7 +19,7 @@ nw_node = malloc(sizeof(listint_t));
 		return (NULL);
 	}
 nw_node->n = n;
-if (idx == 0 || *head == NULL)
+if (idx == 0)
 {
 	nw_node->next = *head;
 	*head = nw_node;
