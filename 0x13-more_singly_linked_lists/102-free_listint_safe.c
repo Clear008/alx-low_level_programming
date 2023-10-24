@@ -8,12 +8,13 @@
 size_t free_listint_safe(listint_t **h)
 {
 size_t wcount = 0;
-listint_t *t;
-listint_t *next;
+listint_t *next, *t;
 
 if (h == NULL)
 exit(98);
-t = (*h);
+
+t = *h;
+
 while (t != NULL)
 {
 next = t->next;
