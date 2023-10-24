@@ -23,6 +23,7 @@ if (idx == 0)
 {
 	nw_node->next = *head;
 	*head = nw_node;
+	return (nw_mode);
 }
 
 while (t != NULL)
