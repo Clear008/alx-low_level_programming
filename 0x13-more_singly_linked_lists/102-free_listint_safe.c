@@ -7,14 +7,12 @@
 
 size_t free_listint_safe(listint_t **h)
 {
-if (h == NULL)
-exit(98);
-
-
-
 size_t wcount = 0;
 listint_t *t = *h;
 listint_t *next;
+
+if (h == NULL)
+exit(98);
 
 while (t != NULL)
 {
