@@ -27,10 +27,16 @@ i = 0;
 while (i < index - 1)
 {
 	if (crt->next == NULL)
+	{
 
 		return (-1);
+	}
 	crt = crt->next;
 	i++;
+	}
+	if (crt->next == NULL)
+	{
+		return (-1);
 	}
 	next = crt->next->next;
 	free(crt->next);
