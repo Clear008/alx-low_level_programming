@@ -1,4 +1,4 @@
-#inclde "lists.h"
+#include "lists.h"
 /**
  * print_listint_safe - a function that prints a listint_t linked list
  * @head: a pointer
