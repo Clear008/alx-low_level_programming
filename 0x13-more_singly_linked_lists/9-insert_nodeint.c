@@ -28,7 +28,7 @@ if (idx == 0)
 
 while (t != NULL)
 {
-	if (p == idx)
+	if (p == idx - 1)
 	{
 		nw_node->next = t->next;
 		t->next = nw_node;
