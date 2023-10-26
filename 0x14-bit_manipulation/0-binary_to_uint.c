@@ -16,7 +16,7 @@ return (0);
 
 for (i = 0; b[i] != '\0'; i++)
 {
-char n = b[i];
+n = b[i];
 if (n != '0' && n != '1')
 {
 return (0);
