@@ -13,7 +13,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 while (w_xor != 0)
 {
 	wcount += w_xor & 1;
-	wxor >>= 1;
+	w_xor >>= 1;
 }
 return (wcount);
 }
