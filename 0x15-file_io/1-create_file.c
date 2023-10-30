@@ -12,7 +12,7 @@ int filed, len, b_written;
 
 if (filename == NULL)
 return (-1);
-filed = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+filed = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (filed == -1)
 return (-1);
 
