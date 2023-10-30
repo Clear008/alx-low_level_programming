@@ -16,7 +16,7 @@ filed = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (filed == -1)
 return (-1);
 
-if (text_content == NULL)
+if (text_content != NULL)
 {
 len = 0;
 while (text_content[len] != '\0')
