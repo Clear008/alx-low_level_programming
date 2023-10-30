@@ -25,7 +25,7 @@ if (argc != 3)
 dprintf(STDERR_FILENO, "%s", er_0), exit(97);
 fd_from = open(file_from, O_RDONLY);
 if (fd_from == -1)
-dprintf(STDERR_FILENO, "%s%s\n", er_2, file_from), exit(98);
+dprintf(STDERR_FILENO, "%s%s\n", er_1, file_from), exit(98);
 fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 if (fd_to == -1)
 dprintf(STDERR_FILENO, "%s%s\n", er_2, file_to), exit(99);
