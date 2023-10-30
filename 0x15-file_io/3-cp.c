@@ -1,6 +1,7 @@
 #include "main.h"
 
 #define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
+#define BUFFER_SIZE 1024
 
 /**
  *main - check the code
@@ -32,7 +33,7 @@ while ((r = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 {
 b_written = write(fd_to, buffer, r);
 if (b_written == -1)
-dprintf(STDERR_FILENO, "%s%s\n", err2, file), exit(99);
+dprintf(STDERR_FILENO, "%s%s\n", err2, file_to), exit(99);
 }
 if (r == -1)
 dprintf(STDERR_FILENO, "%s%s\n", err1, file_from), exit(98);
