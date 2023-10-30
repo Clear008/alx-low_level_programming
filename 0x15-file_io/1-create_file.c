@@ -22,12 +22,12 @@ len = 0;
 while (text_content[len] != '\0')
 {
 len++;
-}
+
 }
 b_written = write(filed, text_content, len);
 if (b_written == -1)
-{
-close(filed);
 return (-1);
 }
+close(filed);
+return (1);
 }
