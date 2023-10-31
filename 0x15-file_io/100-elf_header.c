@@ -58,6 +58,7 @@ elf_magic[2] == 'L' && elf_magic[3] == 'F')
 {
 printf("ELF Header:\n");
 print_ELF_Magic(elf_magic);
+printf_ELF_Class(elf_magic);
 }
 else
 {
