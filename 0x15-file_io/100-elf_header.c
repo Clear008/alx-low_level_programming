@@ -39,13 +39,11 @@ printf("ELF64\n");
 void print_ELF_Data(const unsigned char e_ident[EI_NIDENT])
 {
 printf("  Data:                              ");
-if (e_ident[EI_DATA] == ELFDATA2LSB) {
+if (e_ident[EI_DATA] == ELFDATA2LSB)
 printf("2's complement, little endian\n");
-}
-else if (e_ident[EI_DATA] == ELFDATA2MSB) 
-{
+else if (e_ident[EI_DATA] == ELFDATA2MSB)
 printf("2's complement, big endian\n");
-}
+
 }
 
 /**
