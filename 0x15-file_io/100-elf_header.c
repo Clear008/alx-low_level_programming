@@ -1,6 +1,17 @@
 #include <elf.h>
 #include "main.h"
 
+
+void print_ELF_Magic(const unsigned char *e_ident);
+void print_ELF_Class(const unsigned char *e_ident);
+void print_ELF_Data(const unsigned char *e_ident);
+void print_ELF_Version(unsigned char *e_ident);
+void print_ELF_OsAbi(unsigned char *e_ident);
+void print_ELF_Abiv(unsigned char *e_ident);
+void print_ELF_type(unsigned int e_type, unsigned char *e_ident);
+void print_ELF_entry(unsigned long int e_entry, unsigned char *e_ident);
+
+
 /**
 * print_ELF_Magic - print magic number
 * @e_ident: Elf identifier
