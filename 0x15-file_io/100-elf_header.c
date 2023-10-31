@@ -18,6 +18,18 @@ printf("%02x ", e_ident[inx]);
 printf("\n");
 }
 /**
+ * print_ELF_Class - print ELF class
+ * @e_ident: ELF identifier
+ */
+void print_ELF_Class(const unsigned char e_ident[EI_NIDENT])
+{
+printf("  Class:                             ");
+if (e_ident[EI_CLASS] == ELFCLASS32)
+printf("ELF32\n");
+else if (e_ident[EI_CLASS] == ELFCLASS64)
+printf("ELF64\n");
+}
+/**
  *main - check the code
  *@argv: array of command line argument
  *@argc: number of command line argument
