@@ -81,6 +81,7 @@ print_ELF_Data(elf_magic);
 else
 {
 fprintf(stderr, "Error: Not an ELF file: %s\n", argv[1]);
+
 close(fd);
 exit(98);
 }
