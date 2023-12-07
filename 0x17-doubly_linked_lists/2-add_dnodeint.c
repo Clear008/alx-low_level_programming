@@ -17,8 +17,7 @@ if (head == NULL)
 new_node = malloc(sizeof(dlistint_t));
 if (new_node == NULL)
 	return (NULL);
-for (inx = 0; str[inx] != '\0'; inx++)
-acount++;
+
 new_node->n = n;
 new_node->prev = NULL;
 new_node->next = *head;
