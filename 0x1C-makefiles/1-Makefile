@@ -3,4 +3,4 @@ SRC = school.c main.c
 
 
 all:
-	$(CC) $(SRC)i -o school
+	$(CC) $(SRC) -o school
