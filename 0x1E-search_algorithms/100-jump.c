@@ -7,6 +7,7 @@
  * @value: Value to search for
  * Return: Index of the first occurrence of value, or -1
  */
+
 int jump_search(int *array, size_t size, int value)
 {
 size_t indx, jump, step;
@@ -25,7 +26,7 @@ jump += step;
 printf("Value found between indexes [%ld] and [%ld]\n", indx, jump);
 
 jump = jump < size - 1 ? jump : size - 1;
-for (; indx < jump && array[i] < value; indx++)
+for (; indx < jump && array[indx] < value; indx++)
 printf("Value checked array[%ld] = [%d]\n", indx, array[indx]);
 printf("Value checked array[%ld] = [%d]\n", indx, array[indx]);
 
