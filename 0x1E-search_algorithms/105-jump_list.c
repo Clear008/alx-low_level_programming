@@ -1,40 +1,41 @@
 #include "search_algos.h"
+
 /**
- * jump_list - searches for a value in an array of
- * integers using the Jump search algorithm
- * @list: a pointer to the first element of the array to search in
- * @size: is the number of elements in array
+ * jump_list - searches for a value in a singly linked list using
+ *             the Jump search algorithm
+ * @list: pointer to the head of the linked list
+ * @size: number of elements in the linked list
  * @value: value to search for
- * Return: index of the number
+ * Return: pointer to the node containing the value, or NULL if not found
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
 size_t index = 0, n = 0, c;
-listint_t *prv;
+listint_t *prev;
 
 if (list == NULL || size == 0)
 return (NULL);
-
 c = (size_t)sqrt((double)size);
-do {
-prv = list;
+while (list->next && list->n < value)
+{
+prev = list;
 n++;
-index = n *c;
+index = n * c;
+
 while (list->next && list->index < index)
 list = list->next;
-if (list->next == NULL && index != list->index)
-index = list->index;
-printf("Value checked at index [%d] = [%d]\n", (int)index, list->n);
-} while (index < size && list->next && list->n < value);
 
+printf("Value checked at index [%lu] = [%d]\n", index, list->n);
+}
 printf("Value found between indexes ");
-printf("[%d] and [%d]\n", (int)prev->index, (int)list->index);
+printf("[%lu] and [%lu]\n", prev->index, list->index);
 
-for (; prv && prev->index <= list->index; prv = prev->next)
+while (prev && prev->index <= list->index)
 {
-printf("Value checked at index [%d] = [%d]\n", (int)prev->index, prev->n);
+printf("Value checked at index [%lu] = [%d]\n", prev->index, prev->n);
 if (prev->n == value)
-return (prv);
+return (prev);
+prev = prev->next;
 }
 return (NULL);
 }
