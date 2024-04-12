@@ -28,13 +28,13 @@ half--;
 if (value == array[half])
 {
 if (half > 0)
-return (rec_search(array, half + 1, value));
+return (f_recurtion_search(array, half + 1, value));
 return ((int)half);
 }
 if (value < array[half])
-return (rec_search(array, half + 1, value));
+return (f_recurtion_search(array, half + 1, value));
 half++;
-return (rec_search(array + half, size - half, value) + half);
+return (f_recurtion_search(array + half, size - half, value) + half);
 }
 
 /**
