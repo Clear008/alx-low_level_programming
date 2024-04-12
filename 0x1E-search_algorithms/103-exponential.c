@@ -10,7 +10,7 @@
  *Return: Index of the first occurrence of value,
  *or -1 if not found.
  */
-int binary_search(int *array, int left, int right, int value)
+int f_binary_search(int *array, int left, int right, int value)
 {
 int mid, j;
 while (left <= right)
@@ -67,6 +67,6 @@ left = i / 2;
 right = (i < size) ? i : size - 1;
 printf("Value found between indexes [%d] and [%d]\n", left, right);
 
-return (binary_search(array, left, right, value));
+return (f_binary_search(array, left, right, value));
 }
 
